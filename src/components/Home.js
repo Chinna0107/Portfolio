@@ -1,6 +1,6 @@
 import React from 'react';
 import Skills from './Skills'; // Adjust path if it's inside /components or /pages
-import chinna from './chinna.jpg';
+import chinna from './chinna3.png';
 import Projects from './Projects';
 import Contact from './Contact';
 
