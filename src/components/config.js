@@ -5,7 +5,7 @@ const dev = {
 };
 
 const prod = {
-  BASE_URL: 'https://portfolio-backend-sepia-nine.vercel.app/',  // Replace with your real production URL
+  BASE_URL: 'https://portfolio-backend-sepia-nine.vercel.app',
 };
 
 const config = process.env.NODE_ENV === 'development' ? dev : prod;
