@@ -15,7 +15,7 @@ function Home() {
           style={styles.image}
         />
         <div style={styles.textBox}>
-          <h1 style={styles.title}>Hi, I'm Chinna 👋</h1>
+          <h1 style={styles.title}>Hi, I'm Hemanth Kancharla 👋</h1>
           <h2 style={styles.subtitle}>Founder & CEO of ChinnaMart.in</h2>
           <h3 style={styles.role}>Full Stack Web Developer</h3>
           <p style={styles.desc}>
