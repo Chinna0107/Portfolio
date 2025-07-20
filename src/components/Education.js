@@ -111,7 +111,7 @@ const EducationAchievements = () => {
           textShadow: '0 2px 4px rgba(0,0,0,0.1)'
         }}>
           <h1 style={{ 
-            fontSize: '2.5rem', 
+            fontSize: 'clamp(1.8rem, 5vw, 2.5rem)', 
             fontWeight: '700',
             marginBottom: '10px',
             background: 'linear-gradient(to right, #fff, #f6d365)',
@@ -121,10 +121,10 @@ const EducationAchievements = () => {
             HEMANTH KANCHARLA
           </h1>
           <p style={{ 
-            fontSize: '1.2rem',
+            fontSize: 'clamp(1rem, 3vw, 1.2rem)',
             opacity: 0.9
           }}>
-            Electronics Engineer & Frontend Developer
+            Electronics Engineer & Full Stack Web Developer
           </p>
           <div style={{ 
             display: 'flex',
@@ -132,10 +132,10 @@ const EducationAchievements = () => {
             gap: '15px',
             marginTop: '15px'
           }}>
-            <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/kancharla-hemanth-650215308/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin style={{ color: '#fff', fontSize: '1.5rem', transition: 'transform 0.3s', ':hover': { transform: 'scale(1.2)' } }} />
             </a>
-            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/Chinna0107" target="_blank" rel="noopener noreferrer">
               <FaGithub style={{ color: '#fff', fontSize: '1.5rem', transition: 'transform 0.3s', ':hover': { transform: 'scale(1.2)' } }} />
             </a>
           </div>
@@ -148,7 +148,7 @@ const EducationAchievements = () => {
           transition: 'transform 0.5s ease, opacity 0.5s ease'
         }}>
           <h2 style={{
-            fontSize: '1.8rem',
+            fontSize: 'clamp(1.5rem, 4vw, 1.8rem)',
             fontWeight: '600',
             marginBottom: '20px',
             display: 'flex',
@@ -164,7 +164,7 @@ const EducationAchievements = () => {
                 key={`edu-${index}`}
                 style={{
                   background: cardGradient,
-                  padding: '25px',
+                  padding: '20px',
                   borderRadius: '15px',
                   boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
                   position: 'relative',
@@ -178,20 +178,23 @@ const EducationAchievements = () => {
                   top: '0',
                   right: '0',
                   background: 'rgba(102, 126, 234, 0.1)',
-                  padding: '5px 15px',
+                  padding: '5px 10px',
                   borderRadius: '0 0 0 15px',
-                  fontSize: '0.9rem',
+                  fontSize: '0.8rem',
                   color: '#667eea',
                   fontWeight: '600'
                 }}>
                   {edu.year}
                 </div>
-                <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                   <div style={{ 
-                    fontSize: '2rem',
+                    fontSize: '1.5rem',
                     background: 'rgba(102, 126, 234, 0.1)',
-                    padding: '15px',
-                    borderRadius: '12px',
+                    padding: '12px',
+                    borderRadius: '10px',
+                    minWidth: '50px',
+                    display: 'flex',
+                    justifyContent: 'center',
                     transition: 'transform 0.3s',
                     ':hover': {
                       transform: 'rotate(5deg)'
@@ -203,7 +206,7 @@ const EducationAchievements = () => {
                     <h3 style={{ 
                       color: '#2c3e50', 
                       margin: '0 0 8px 0',
-                      fontSize: '1.3rem',
+                      fontSize: 'clamp(1rem, 3vw, 1.3rem)',
                       fontWeight: '600'
                     }}>
                       {edu.institution}
@@ -212,14 +215,15 @@ const EducationAchievements = () => {
                       color: '#667eea', 
                       margin: '0 0 5px 0',
                       fontWeight: '500',
-                      fontStyle: 'italic'
+                      fontStyle: 'italic',
+                      fontSize: 'clamp(0.85rem, 2vw, 1rem)'
                     }}>
                       {edu.degree}
                     </p>
                     <p style={{ 
                       color: '#7f8c8d', 
                       margin: '5px 0 0 0',
-                      fontSize: '0.95rem'
+                      fontSize: 'clamp(0.8rem, 2vw, 0.95rem)'
                     }}>
                       {edu.details}
                     </p>
@@ -233,10 +237,10 @@ const EducationAchievements = () => {
         {/* Two-column layout for Certifications & Achievements */}
         <div style={{ 
           display: 'grid',
-          gridTemplateColumns: '1fr 1fr',
+          gridTemplateColumns: '1fr',
           gap: '30px',
-          '@media (max-width: 768px)': {
-            gridTemplateColumns: '1fr'
+          '@media (min-width: 768px)': {
+            gridTemplateColumns: '1fr 1fr'
           }
         }}>
           {/* Certifications Section */}
@@ -245,7 +249,7 @@ const EducationAchievements = () => {
             transition: 'transform 0.5s ease 0.2s, opacity 0.5s ease 0.2s'
           }}>
             <h2 style={{
-              fontSize: '1.8rem',
+              fontSize: 'clamp(1.5rem, 4vw, 1.8rem)',
               fontWeight: '600',
               marginBottom: '20px',
               display: 'flex',
@@ -261,7 +265,7 @@ const EducationAchievements = () => {
                   key={`cert-${index}`}
                   style={{
                     background: cardGradient,
-                    padding: '25px',
+                    padding: '20px',
                     borderRadius: '15px',
                     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
                     position: 'relative',
@@ -274,20 +278,23 @@ const EducationAchievements = () => {
                     top: '0',
                     right: '0',
                     background: 'rgba(246, 211, 101, 0.1)',
-                    padding: '5px 15px',
+                    padding: '5px 10px',
                     borderRadius: '0 0 0 15px',
-                    fontSize: '0.9rem',
+                    fontSize: '0.8rem',
                     color: '#f6d365',
                     fontWeight: '600'
                   }}>
                     {cert.year}
                   </div>
-                  <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                     <div style={{ 
-                      fontSize: '2rem',
+                      fontSize: '1.5rem',
                       background: 'rgba(246, 211, 101, 0.1)',
-                      padding: '15px',
-                      borderRadius: '12px',
+                      padding: '12px',
+                      borderRadius: '10px',
+                      minWidth: '50px',
+                      display: 'flex',
+                      justifyContent: 'center',
                       transition: 'transform 0.3s',
                       ':hover': {
                         transform: 'rotate(5deg)'
@@ -299,7 +306,7 @@ const EducationAchievements = () => {
                       <h3 style={{ 
                         color: '#2c3e50', 
                         margin: '0 0 8px 0',
-                        fontSize: '1.2rem',
+                        fontSize: 'clamp(1rem, 3vw, 1.2rem)',
                         fontWeight: '600'
                       }}>
                         {cert.title}
@@ -307,7 +314,7 @@ const EducationAchievements = () => {
                       <p style={{ 
                         color: '#7f8c8d', 
                         margin: '0',
-                        fontSize: '0.95rem'
+                        fontSize: 'clamp(0.8rem, 2vw, 0.95rem)'
                       }}>
                         {cert.issuer}
                       </p>
@@ -324,7 +331,7 @@ const EducationAchievements = () => {
             transition: 'transform 0.5s ease 0.4s, opacity 0.5s ease 0.4s'
           }}>
             <h2 style={{
-              fontSize: '1.8rem',
+              fontSize: 'clamp(1.5rem, 4vw, 1.8rem)',
               fontWeight: '600',
               marginBottom: '20px',
               display: 'flex',
@@ -340,7 +347,7 @@ const EducationAchievements = () => {
                   key={`ach-${index}`}
                   style={{
                     background: cardGradient,
-                    padding: '25px',
+                    padding: '20px',
                     borderRadius: '15px',
                     boxShadow: '0 10px 20px rgba(0, 0, 0, 0.1)',
                     position: 'relative',
@@ -353,20 +360,23 @@ const EducationAchievements = () => {
                     top: '0',
                     right: '0',
                     background: 'rgba(255, 154, 158, 0.1)',
-                    padding: '5px 15px',
+                    padding: '5px 10px',
                     borderRadius: '0 0 0 15px',
-                    fontSize: '0.9rem',
+                    fontSize: '0.8rem',
                     color: '#ff9a9e',
                     fontWeight: '600'
                   }}>
                     {ach.year}
                   </div>
-                  <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+                  <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                     <div style={{ 
-                      fontSize: '2rem',
+                      fontSize: '1.5rem',
                       background: 'rgba(255, 154, 158, 0.1)',
-                      padding: '15px',
-                      borderRadius: '12px',
+                      padding: '12px',
+                      borderRadius: '10px',
+                      minWidth: '50px',
+                      display: 'flex',
+                      justifyContent: 'center',
                       transition: 'transform 0.3s',
                       ':hover': {
                         transform: 'rotate(5deg)'
@@ -378,7 +388,7 @@ const EducationAchievements = () => {
                       <h3 style={{ 
                         color: '#2c3e50', 
                         margin: '0 0 8px 0',
-                        fontSize: '1.2rem',
+                        fontSize: 'clamp(1rem, 3vw, 1.2rem)',
                         fontWeight: '600'
                       }}>
                         {ach.title}
@@ -386,7 +396,7 @@ const EducationAchievements = () => {
                       <p style={{ 
                         color: '#7f8c8d', 
                         margin: '0',
-                        fontSize: '0.95rem'
+                        fontSize: 'clamp(0.8rem, 2vw, 0.95rem)'
                       }}>
                         {ach.details}
                       </p>
